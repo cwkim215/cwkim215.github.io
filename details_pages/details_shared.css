@@ -77,3 +77,15 @@
     width: 1024px;
     height: 576px;
 }
+
+#ios-video-section {
+    width: 414px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+#ios-video {
+    width: 414px;
+    height: 896px;
+}
