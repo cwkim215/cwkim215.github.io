@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christian Kim | Tri-Ball</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="../../pushbar/pushbar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../shared.css">
+        <link rel="stylesheet" href="../details_shared.css">
+        <meta name="description" content="This page features the details of Tri-Ball, a game Christian designed in his class CTIN 484/489 with his partner Brian Kim. Tri-Ball is a first-person sports duel. The game was made in Unity.">
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about_me.html">About Me</a></li>
+                <li>Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="triball_details.html">Tri-Ball</a></li>
+                        <li><a href="../itp380/itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="../wanderinglight/wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Tri-Ball</h1>
+        <hr>
+        <div id="main-container">
+            <img id="main-img" src="img/triball_main.png" alt="Tri-ball">
+            <div class="main-sections">
+                <h2>Background</h2>
+                <p>Through the course CTIN 484/489 - Intermediate Game Development, I created Tri-Ball in a partnership. We learned the importance of the game design cycle and even practiced the process of shipping a game. We met our Alpha, Beta, and Gold Master milestones. We also did prototyping, pitching, metric tracking, usability/play testing, and much more over the course of one semester. We also got to take a deep dive into Unity and figuring out how to make a multiplayer game with controllers. </p>
+            </div>
+            <div class="main-sections">
+                <h2>Main Ideas</h2>
+                <p>The idea with Tri-Ball was to create a very intense, fast-paced, and "duel"-like game. We envisioned a perfect environment to be similar to sports. However, to stay in line with our dueling theme, we chose to make it a 1-on-1 (similar to a a quick basketball game at a park rather than a professional Basketball game). In fact, we created a dueling system where players have a little mini-game when they collide with each other. The game is also played from the first-person perspective to enhance the immersion of the 1-on-1. We also still stayed very much in line with real-life sports as we feature a playing field with similarities to the American football yard system, a shot clock, and a goal scoring system.</p>
+            </div>
+            <div class="main-sections">
+                <h2>Gameplay</h2>
+                <p> The gameplay itself features two players who play two 2-minute halves to try and outscore each other. We gave each player three movement abilities, dash, side-step, and pushback, to help enhance their gameplay. Once the player picks up the ball, they have 5 seconds to shoot. However, using the football-like yard system, the player can reset their shot clock back to 5 if they are able to reach the next yard line in front of them. The scoring basket has 3 holes for the players to score in. The bottom opening gives players 1 point, the middle opening awards players 2 points, and the top awards them 3 points. For the dueling system mentioned earlier, the mini-game is a 3 second button mash fest where the loser gets push backed. (Due to the limited time and scope of the class, we chose to implement the multiplayer as LAN only. We did this by creating multiple controller mappings through the new Unity input system). </p>
+            </div>
+            <hr>
+            <h2>Detailed Images</h2>
+            <div id="img-section">
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/triball_home.png" alt="Home">
+                    <h3>Home Screen</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/triball_basket.png" alt="Goal">
+                    <h3>Goal</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/triball_field.png" alt="Field">
+                    <h3>Field</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/triball_dueling.png" alt="Dueling">
+                    <h3>Dueling</h3>
+                </div>
+            </div>
+            <hr>
+            <h2>Tri-Ball Trailer</h2>
+            <div id="video-section">
+                <iframe id="video" src="https://www.youtube.com/embed/VIsTrFqjQUE" name="triball-vid"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="../../pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

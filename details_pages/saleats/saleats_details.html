@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christian Kim | SalEats</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="../../pushbar/pushbar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../shared.css">
+        <link rel="stylesheet" href="../details_shared.css">
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about_me.html">About Me</a></li>
+                <li>Game Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="triball_details.html">Tri-Ball</a></li>
+                        <li><a href="../itp380/itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="../wanderinglight/wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+                <li>Web/App Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="../homeroom/homeroom_details.html">Homeroom</a></li>
+                        <li><a href="saleats_details.html">SalEats</a></li>
+                        <li><a href="../wanderinglight/wanderinglight_details.html">K-ollector</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>SalEats</h1>
+        <hr>
+        <div id="main-container">
+            <div id="video-section">
+                <iframe id="video" src="saleats-demo.mp4" name="triball-vid"></iframe>
+            </div>
+            <div class="main-sections">
+                <h2>Concept</h2>
+                <p>SalEats is a website project created to store restaurants and allow users to search for them. Users may search restaurants by name or different categories they fall under and sort the results by price, rating, or review count. </p>
+            </div>
+            
+            <div class="main-sections">
+                <h2>Implementation</h2>
+                <ul>
+                    <p>Frontend: HTML/CSS</p>
+                    <p>Backend: Java, SQL (MySQL)</p>
+                </ul>
+            </div>
+            <hr>
+            <h2>Detailed Images</h2>
+            <div id="img-section">
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/saleatslogin.png" alt="Login">
+                    <h3>Login/Register Page</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/searchpage.png" alt="Search">
+                    <h3>Search Page</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/detailspage.png" alt="Details">
+                    <h3>Detailed View Page</h3>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="../../pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

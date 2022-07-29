@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Christian Kim | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="pushbar/pushbar.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shared.css">
+    <meta name="description" content="Christian Kim's portfolio website with various game projects he has worked on over the years. It also includes contact info and various skills he has to offer. This is his final project for ITP 104.">
+    <style>
+        #bio {
+            width: 650px;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #profile-img {
+            width: 300px;
+            height: auto;
+            border-radius: 100px;
+        }
+        #profile-info {
+            margin-left: 50px;
+            width: 300px;
+            height: auto;
+            font-size: 2em;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1100px;
+            height: auto;
+            margin-bottom: 50px;
+        }
+        .project-img, .combined-project-img {
+            width: 500px;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .combined-project-img {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .itp-380-img {
+            width: 250px;
+            height: auto;
+        }
+        .project-desc {
+            width: 500px;
+            height: auto;
+            font-size: 1.5em;
+            margin-left: 50px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .projects:hover .project-desc {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease;
+        }
+        .projects:hover .project-img, .projects:hover .combined-project-img {
+            border: 2px solid gold;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li>Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="details_pages/triball/triball_details.html">Tri-Ball</a></li>
+                        <li><a href="details_pages/itp380/itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="details_pages/wanderinglight/wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Christian Kim</h1>
+        <hr>
+        <div id="content">
+            <div id="bio">
+                <a href="about_me.html"><img id="profile-img" src="img/homepage/profile.JPG" alt="Profile"></a>
+                <div id="profile-info">
+                    <p>Game Programmer and Designer.</p>  
+                    <p>Scholar at the University of Southern California.</p>
+                </div>
+            </div>
+            <hr>
+            <h2> Game Projects </h2>
+            <div class="projects">
+                <img class="project-img" src="img/homepage/triball.JPG" alt="Tri-Ball">
+                <div class="project-desc">
+                    <a href="details_pages/triball/triball_details.html"><h3>Tri-Ball</h3></a>
+                    <p>A First-Person, 1-on-1, sports duel that was made in Unity. Players shoot a ball into a 3-level goal, and each have 3 abilities to utilize to try and defeat their opponent.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="combined-project-img">
+                    <img class="itp-380-img" src="img/homepage/pacman.png" alt="PacMan">
+                    <img class="itp-380-img" src="img/homepage/zelda.png" alt="Zelda">
+                    <img class="itp-380-img" src="img/homepage/mariokart.png" alt="Mario Kart">
+                    <img class="itp-380-img" src="img/homepage/parkour.png" alt="Parkour">
+                </div>
+                <div class="project-desc">
+                    <a href="details_pages/itp380/itp380_details.html"><h3>Game Programming in C++</h3></a>
+                    <p> Small scale verisons of many popular famous games, such as Pac-Man, The Legend of Zelda: A Link to the Past, Mario Kart, and more! (done through the class ITP-380 (Video game Programming) at USC).</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-img" src="img/homepage/wanderinglight.png" alt="Wandering Light">
+                <div class="project-desc">
+                    <a href="details_pages/wanderinglight/wanderinglight_details.html"><h3>Wandering Light</h3></a>
+                    <p>A narrative based game, where the main mechanic is to use a lantern to find different items to interact with within the game to progress through the story.</p>
+                </div>
+            </div>
+            <h2> Web/App Projects </h2>
+            <div class="projects">
+                <img class="project-img" src="img/homepage/homeroom.png" alt="Homeroom">
+                <div class="project-desc">
+                    <a href="details_pages/triball/triball_details.html"><h3>Homeroom</h3></a>
+                    <p>A website project that is made for professors and students to efficiently ask and asnwer questions.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-img" src="img/homepage/saleats.png" alt="Tri-Ball">
+                <div class="project-desc">
+                    <a href="details_pages/triball/triball_details.html"><h3>SalEats</h3></a>
+                    <p>A website project that allows users to find restaurants and various information about them.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-img" src="img/homepage/triball.JPG" alt="Tri-Ball">
+                <div class="project-desc">
+                    <a href="details_pages/triball/triball_details.html"><h3>K-ollector</h3></a>
+                    <p>An iOS app project that allows users to collect K-Pop music videos.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

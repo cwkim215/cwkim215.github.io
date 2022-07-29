@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Christian Kim |  About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="pushbar/pushbar.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shared.css">
+    <meta name="description" content="Christian Kim's info section. It includes some of his passions and hobbies. It also details the skills he has worked on over the past couple years. The page also provides some of the coding he has done for his game projects.">
+    <style>
+        h3 {
+            margin-bottom: 20px;
+        }
+        #description {
+            width: 1100px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #desc-img {
+            width: 500px;
+            height: auto;
+            margin-right: 50px;
+        }
+        #desc-text {
+            width: 550px;
+            height: auto;
+            font-size: 1.2em;
+        }
+        .skills-section, .code-section {
+            width: 1100px;
+            height: auto;
+            transition: all 1s ease-in-out;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .skills-section:hover, .code-section:hover {
+            font-size: 1.5em;
+            transition: all 1s ease-in-out;
+        }
+        .skills-section:hover h3 {
+            color: gold;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li>Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="details_pages/triball/triball_details.html">Tri-Ball</a></li>
+                        <li><a href="details_pages/itp380/itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="details_pages/wanderinglight/wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>About Me</h1>
+        <hr>
+        <div id="content">
+            <div id="description">
+                <img id="desc-img" src="img/aboutme/me.jpg" alt="My Photo">
+                <div id="desc-text">
+                    <p>Hi! I'm Christian Kim. I am currently a Junior at the University of Southern California studying Computer Science Games in the Viterbi School of Engineering. My passion for games started at a very young age, with my first ever action with my first ever laptop being downloading <em>League of Legends</em>. Now, I enjoy designing and programming them! </p>  
+
+                    <p>As a game designer/programmer, I want to create games that really focus on the player and give them an immersive expirience they won't be able to forget. I believe that playcentric design is the key to finding success in a game, so I want to keep that my primary focus as I head into my future projects/endeavors. However, my love for Computer Science and coding is not limited to games. I hope that all I learned and expiramented with (coding C++ data structures, web development, and working with databases like MySQL) can help me no matter what I am doing.</p>
+
+                    <p>My main hobby is playing video games. Some of my favorite games include <em>NBA 2K</em>, <em>Apex Legends</em>, <em>Valorant</em>, and <em>Madden</em>. Outside of gaming, I really enjoy watching and playing basketball, playing the guitar, or simply chilling with friends. My favorite food is sushi, and I love favorite dessert is shaved ice.</p>
+                </div>
+            </div>
+            <hr>
+            <h2> Skills </h2>
+            <div class="skills-section">
+                <h3>Programming Languages</h3>
+                <p>C++</p>
+                <p>Java</p>
+                <p>Python</p>
+                <p>Swift (iOS)</p>
+                <p>HTML/CSS/JS</p>
+            </div>
+            <div class="skills-section">
+                <h3>Game Engines</h3>
+                <p>Unity</p>
+                <p>Unreal</p>
+            </div>
+            <div class="skills-section">
+                <h3>Databases</h3>
+                <p>MySQL</p>
+                <p>Firebase</p>
+            </div>
+            <hr>
+            <h2>Code Examples</h2>
+            <div class="code-section">
+                <a href="https://github.com/BroYenKim/Tri-Ball" target="_blank"><h3>Tri-Ball</h3></a>
+            </div>
+            <div class="code-section">
+                <a href="https://drive.google.com/drive/folders/1k8HUmjVMEAv5_KdhmWnlByBf6ZitK-YL?usp=sharing" target="_blank"><h3>Game Programming in C++</h3></a>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

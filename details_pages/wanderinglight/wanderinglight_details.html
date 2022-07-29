@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christian Kim | Tri-Ball</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="../../pushbar/pushbar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../shared.css">
+        <link rel="stylesheet" href="../details_shared.css">
+        <meta name="description" content="This page features the details of Wandering Light, a game Christian worked on for a graduate's student thesis project. Christian was part of the programming team and worked mainly on the lantern mechanic as well as the dialogue system for the game.">
+        <style>
+            .wandering-img {
+                width: 500px;
+                height: auto;
+                transition: all 1s ease-in-out;
+            }
+
+            .detailed-img-container:hover .wandering-img {
+                width: 600px;
+                border: 2px solid gold;
+                transition: all 1s ease-in-out;
+            }
+
+            .main-sections:hover ul {
+                font-size: 1.5em;   
+                transition: all 1s ease-in-out;
+            }
+
+            .main-sections ul {
+                transition: all 1s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about_me.html">About Me</a></li>
+                <li>Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="../triball/triball_details.html">Tri-Ball</a></li>
+                        <li><a href="../itp380/itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Wandering Light</h1>
+        <hr>
+        <div id="main-container">
+            <img id="main-img" src="img/wanderinglight.png" alt="Wandering Light">
+            <div class="main-sections">
+                <h2>Background</h2>
+                <p> “Wandering Light” is an interactive narrative 2D game for mobile, where you play as a young girl that must complete tasks for the people-eating witch Baba Yaga in order to escape the dark forest. With only a small lantern & a strong will to guide her, players will explore the story and journey deeper into the forest by using the lantern to interact with the scene on the page. Shine through the dark, reveal hidden messages, and more as you wander through the forgotten tales of the forest.
+                </p>
+            </div>
+            <div class="main-sections">
+                <h2>Lantern Mechanic</h2>
+                <p>My job for this project was being part of the programming team. Most of the coding work came through the lantern mechanic. The main idea for the lantern was that the whole scene would be dark until the lantern was able to shine light on an interactable object. From here, players could make decisions on which path they wanted to progress the story on. To make the lantern easy to use for the players, we made a click and drag type system and also gave it a brighter shine once a player got closer to an interactable object. </p>
+            </div>
+            <div class="main-sections">
+                <h2>Skills and Completed Work</h2>
+                <ul>
+                    <li>Done in Unity using C#.</li>
+                    <li>Created transitions in and out of scenes.</li>
+                    <li>Implemented the full lantern mechanic.</li>
+                    <li>Implemented a dialogue system for the game.</li>
+                </ul>
+            </div>
+            <hr>
+            <h2>Detailed Images</h2>
+            <div id="img-section">
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/interactableobject.png" alt="Object">
+                    <h3>Interactable Objects</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="wandering-img" src="img/lanternmechanic2.png" alt="Lantern Far">
+                    <img class="wandering-img" src="img/lanternmechanic1.png" alt="Lantern Close">
+                    <h3>Lantern Mechanic</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="wandering-img" src="img/dialogueSystem.png" alt="Dialogue">
+                    <h3>Dialogue System</h3>
+                </div>
+            </div>
+            <hr>
+            <h2>Demo Video</h2>
+            <div id="video-section">
+                <iframe id="video" src="vid/demo.mp4" name="triball-vid"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="../../pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

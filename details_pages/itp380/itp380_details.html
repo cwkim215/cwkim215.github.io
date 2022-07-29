@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christian Kim | Game Programming in C++</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="../../pushbar/pushbar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cf6505dacd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../shared.css">
+        <link rel="stylesheet" href="../details_shared.css">
+        <meta name="description" content="This page features the details of ITP-380 Game Programming In C++, a class Christian took at USC where he made many different types of games to learn to do gameplay programming.">
+        <style>
+            #main-img {
+                display: flex;
+            }
+            .main-img-photo {
+                width: 275px;
+                height: auto;
+            }
+            .main-sections li {
+                transition: all 1s ease-in-out;
+            }
+            .main-sections:hover li {
+                font-size: 1.5em;   
+                transition: all 1s ease-in-out;
+            }
+            .main-sections li > ul{
+                display: none;
+            }
+            .main-sections:hover li > ul {
+                display: block;
+            }
+            .detailed-img-container {
+                width: 500px;
+                height: auto;
+                margin-bottom: 50px;
+            } 
+            .detailed-img-container:hover .detailed-img {
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-pushbar-id="navbar" data-pushbar-direction="right">
+            <button id="close-button" data-pushbar-close><i class="fa-solid fa-xmark"></i></button>
+            <ul id="menu-content">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about_me.html">About Me</a></li>
+                <li>Projects
+                    <ul id="menu-content-dropdown">
+                        <li><a href="../triball/triball_details.html">Tri-Ball</a></li>
+                        <li><a href="itp380_details.html">Game Programming in C++</a></li>
+                        <li><a href="../wanderinglight/wanderinglight_details.html">Wandering Light</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="menu-button" class="menu-button" data-pushbar-target="navbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Game Programming In C++ (ITP-380)</h1>
+        <hr>
+        <div id="main-container">
+            <div id="main-img">
+                <img class="main-img-photo" src="img/pacman.png" alt="Pac-Man">
+                <img class="main-img-photo" src="img/zelda.png" alt="Zelda">
+                <img class="main-img-photo" src="img/mariokart.png" alt="Mario-Kart">
+                <img class="main-img-photo" src="img/parkour.png" alt="Parkour's Edge">
+            </div>
+            <div class="main-sections">
+                <h2>Background</h2>
+                <p> This course provides students with an in-depth introduction to technologies and techniques used in the game industry today. I learned how to program and create several different games in C++, starting with 2D games and moving on to 3D. This course focuses on practical, hands-on information that’s critical to learning how to be a successful video game programmer. </p>
+            </div>
+            <div class="main-sections">
+                <h2>Skills and Completed Work</h2>
+                <ul>
+                    <li>Gained an understanding of and learned to work with core game systems.
+                        <ul>
+                            <li>Rendering</li>
+                            <li>Input</li>
+                            <li>Sound</li>
+                            <li>Collisions/Physics</li>
+                        </ul>
+                    </li>
+                    <li>Developed a strong understanding of the mathematics needed for gameplay programming. (Vectors, Matrices, Quaternions). </li>
+                    <li>Programmed a total of 9 functional games in C++ over 12 weeks.</li>
+                </ul>
+            </div>
+            <hr>
+            <h2>Game Images</h2>
+            <div id="img-section">
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/pong.png" alt="Pong">
+                    <h3>Pong</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/asteroids.png" alt="Asteroids">
+                    <h3>Asteroids</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/frogger.png" alt="Frogger">
+                    <h3>Frogger</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/mario.png" alt="Mario">
+                    <h3>Mario</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/pacman.png" alt="Pac-Man">
+                    <h3>Pac-Man</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/zelda.png" alt="Zelda">
+                    <h3>Zelda</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/starfox.png" alt="Star Fox Tunnel">
+                    <h3>Star Fox Tunnel</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/mariokart.png" alt="Mario-Kart">
+                    <h3>Mario-Kart</h3>
+                </div>
+                <div class="detailed-img-container">
+                    <img class="detailed-img" src="img/parkoursedge.png" alt="Parkour's Edge">
+                    <h3>Parkour's Edge (Inspired by Mirror's Edge)</h3>
+                </div>
+            </div>
+            <hr>
+            <h2>Video Demonstration</h2>
+            <div id="video-section">
+                <iframe id="video" src="vid/itp380trailer.mp4" name="triball-vid"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <h3>Contact Me</h3>
+            <p><a href="https://github.com/cwkim215"><i class="fa-brands fa-github"></i></a>  <a href="https://twitter.com/rlacks_"><i class="fa-brands fa-twitter"></i></a>  <a href="mailto:kim.christian000@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <script src="../../pushbar/pushbar.js"></script>
+        <script>
+            const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+            });
+        </script>
+    </body>
+</html>

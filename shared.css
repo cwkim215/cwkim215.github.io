@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: #F8F9FA;
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2em; 
+}
+
+hr {
+    background-color: #F8F9FA;
+}
+a:link {
+    color: #F8F9FA;
+}
+a:visited {
+    color: #F8F9FA;
+}
+a:hover {
+    color: gold;
+}
+ul a:link {
+    color: black;
+    text-decoration: none;
+}
+ul a:visited {
+    color: black;
+    text-decoration: none;
+}
+ul a:hover {
+    color: gold;
+}
+button {
+    background-color: black;
+    border: 2px solid #F8F9FA;
+}
+#content {
+    width: 1100px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+#menu-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    color: white;
+}
+#close-button {
+    font-size: 2em;
+    color: white;
+}
+#menu-content {
+    color: black;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+
+#menu-content-dropdown {
+    visibility: hidden;
+}
+
+#menu-content-dropdown > li {
+    margin-right: 10px;
+    font-size: 0.75em;
+}
+
+li:hover #menu-content-dropdown {
+    visibility: visible;
+}
+
+#footer {
+    color: gold;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 2em;
+}
